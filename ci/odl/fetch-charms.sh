@@ -24,7 +24,7 @@ git clone -b stable/17.11 https://github.com/openstack/charm-glance.git $distro/
 git clone -b stable/17.11 https://github.com/openstack/charm-keystone.git $distro/keystone
 git clone -b stable/17.11 https://github.com/openstack/charm-percona-cluster.git $distro/percona-cluster
 git clone -b stable/17.11 https://github.com/openstack/charm-neutron-api.git $distro/neutron-api
-git clone -b stable/17.11 https://github.com/openstack/charm-neutron-gateway.git $distro/neutron-gateway
+#git clone -b stable/17.11 https://github.com/openstack/charm-neutron-gateway.git $distro/neutron-gateway
 git clone -b stable/17.11 https://github.com/openstack/charm-neutron-openvswitch.git $distro/neutron-openvswitch
 git clone -b stable/17.11 https://github.com/openstack/charm-nova-cloud-controller.git $distro/nova-cloud-controller
 git clone -b stable/17.11 https://github.com/openstack/charm-nova-compute.git $distro/nova-compute
@@ -32,9 +32,9 @@ git clone -b stable/17.11 https://github.com/openstack/charm-openstack-dashboard
 git clone -b stable/17.11 https://github.com/openstack/charm-rabbitmq-server.git $distro/rabbitmq-server
 git clone -b stable/17.11 https://github.com/openstack/charm-heat.git $distro/heat
 git clone -b stable/17.11 https://github.com/openstack/charm-lxd.git $distro/lxd
-git clone -b stable/17.11 https://github.com/openstack/charm-odl-controller.git $distro/odl-controller
-git clone -b stable/17.11 https://github.com/openstack/charm-neutron-api-odl.git $distro/neutron-api-odl
-git clone -b stable/17.11 https://github.com/openstack/charm-openvswitch-odl.git $distro/openvswitch-odl
+#git clone -b stable/17.11 https://github.com/openstack/charm-odl-controller.git $distro/odl-controller
+#git clone -b stable/17.11 https://github.com/openstack/charm-neutron-api-odl.git $distro/neutron-api-odl
+#git clone -b stable/17.11 https://github.com/openstack/charm-openvswitch-odl.git $distro/openvswitch-odl
 git clone https://github.com/openbaton/juju-charm.git $distro/openbaton
 
 charm pull cs:$distro/aodh $distro/aodh
@@ -51,8 +51,8 @@ charm pull cs:~cloudscaling/scaleio-cluster $distro/scaleio-cluster
 charm pull cs:~cloudscaling/scaleio-gui $distro/scaleio-gui
 
 #odl controller specific charm
-#charm pull cs:$distro/odl-controller $distro/odl-controller
-#charm pull cs:~narindergupta/neutron-api-odl-11 $distro/neutron-api-odl
-#charm pull cs:~narindergupta/openvswitch-odl-3 $distro/openvswitch-odl
-#charm pull cs:~narindergupta/neutron-gateway-6 $distro/neutron-gateway
+charm pull cs:$distro/odl-controller $distro/odl-controller
+charm pull cs:~ae40515/neutron-api-odl-0 $distro/neutron-api-odl
+charm pull cs:~narindergupta/openvswitch-odl-3 $distro/openvswitch-odl
+charm pull cs:~narindergupta/neutron-gateway-6 $distro/neutron-gateway
 charm pull cs:~narindergupta/congress-1 $distro/congress
