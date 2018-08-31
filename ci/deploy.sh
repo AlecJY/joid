@@ -261,7 +261,7 @@ deploy() {
     fi
 
     #bootstrap the node
-    ./01-bootstrap.sh
+    ./01-bootstrap.sh $opnfvdistro
 
     juju model-config default-series=$opnfvdistro enable-os-refresh-update=false enable-os-upgrade=false
 
